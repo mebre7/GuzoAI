@@ -6,6 +6,7 @@ langchain-tavily
 psycopg[binary]
 psycopg_pool
 duckduckgo-search
+ddgs
 python-dotenv
 tavily-python
 requests
@@ -15,3 +16,4 @@ pycountry
 fastapi
 uvicorn
 jinja2
+ipykernel
