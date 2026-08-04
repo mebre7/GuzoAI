@@ -1,0 +1,47 @@
+README.md
+LICENSE
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenvs / environment files
+.travel/
+venv/
+env/
+.venv/
+ENV/
+.Python
+.python-version
+.env
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Caches / type-checkers
+.mypy_cache/
+.cache/
+
+# Logs / DBs
+*.log
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Optional: large media/assets (uncomment if you prefer to keep media out of git)
+# media/
