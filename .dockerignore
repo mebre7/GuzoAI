@@ -1,0 +1,36 @@
+# Virtual environment
+.travel/
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Tests / dev files
+test1.py
+.pytest_cache/
+.coverage
+
+# Docs / media (not needed at runtime)
+README.md
+FRONTEND_README.md
+PRODUCT_LANDING_PAGE.md
+media/
+diagram.excalidraw
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Git
+.git/
+.gitignore
