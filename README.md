@@ -4,8 +4,6 @@ A multi-agent AI travel planner that takes natural language input and generates 
 
 Built with **LangGraph**, **LangChain**, **Groq**, and **FastAPI**.
 
-![Diagram](media/diagram.png)
-
 ## Agents
 
 | Agent | Role |
