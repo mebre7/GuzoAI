@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GuzoAI - The Next Generation AI Travel Planner. Personalized itineraries powered by multi-agent AI. From Mirt AI.">
+    <meta name="keywords" content="AI travel planner, travel itinerary, AI travel assistant, personalized travel">
+    <title>GuzoAI - AI-Powered Travel Planning | Mirt AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <svg class="navbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M6 3v18M18 3v18M3 6h18M3 18h18M6 3l6-2 6 2M6 21l6 2 6-2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="navbar-brand">GuzoAI</span>
+                <span class="navbar-byline">by Mirt AI</span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#howitworks" class="nav-link">How It Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#planner" class="nav-link nav-cta">Get Started</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Your Personal AI Travel Companion</h1>
+                    <p class="hero-subtitle">Intelligent travel planning powered by multi-agent AI. Create personalized itineraries with flights, hotels, and activities in seconds.</p>
+                    <div class="hero-buttons">
+                        <a href="#planner" class="btn btn-primary btn-large">Start Planning Now</a>
+                        <a href="#features" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Trips Planned</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">AI Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="card-shine"></div>
+                        <div class="card-content">
+                            <div class="flight-icon">✈️</div>
+                            <h3>Flights</h3>
+                            <p>Best routes & prices</p>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="card-shine"></div>
+                        <div class="card-content">
+                            <div class="hotel-icon">🏨</div>
+                            <h3>Hotels</h3>
+                            <p>Perfect stays</p>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="card-shine"></div>
+                        <div class="card-content">
+                            <div class="activity-icon">🎯</div>
+                            <h3>Activities</h3>
+                            <p>Local experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for perfect travel planning</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Multi-Agent AI</h3>
+                    <p>Specialized AI agents work together to find the best flights, hotels, and activities for you.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Get complete itineraries in seconds, not hours. Real-time updates from multiple sources.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized</h3>
+                    <p>Customized recommendations based on your preferences, budget, and travel style.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Budget Smart</h3>
+                    <p>Optimize your spending with AI-recommended deals on flights and accommodations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Always Available</h3>
+                    <p>Access your itineraries anywhere, anytime. Mobile-optimized and always in sync.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your travel data is encrypted and secure. We never share your information.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="howitworks">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple, intelligent travel planning in three steps</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Tell Us Your Vision</h3>
+                    <p>Describe your dream trip, budget, dates, and preferences in natural language.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Does the Work</h3>
+                    <p>Our multi-agent AI searches for flights, hotels, activities, and creates a perfect itinerary.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Book & Explore</h3>
+                    <p>Review your personalized itinerary and book your perfect trip.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planner Section -->
+        <section class="planner-section" id="planner">
+            <div class="input-section">
+                <div class="input-container">
+                    <h2>Plan Your Perfect Trip</h2>
+                    <p class="description">Tell us about your dream vacation and let our AI agents handle the rest</p>
+
+                    <form id="planForm" class="form">
+                        <div class="form-group">
+                            <label for="userInput">Where do you want to travel?</label>
+                            <textarea
+                                id="userInput"
+                                class="input-textarea"
+                                placeholder="Example: I want to visit Paris from Dec 15-22, 2024. I prefer 4-star hotels and romantic activities. Budget is around $3000-4000."
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Generate Itinerary</span>
+                            <span class="btn-spinner hidden"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <section id="loadingSection" class="loading-section hidden">
+                <div class="loader-container">
+                    <div class="loader">
+                        <div class="loader-dot"></div>
+                        <div class="loader-dot"></div>
+                        <div class="loader-dot"></div>
+                    </div>
+                    <div class="loading-text">
+                        <p id="loadingMessage">Searching for flights...</p>
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <!-- Primary: Complete Travel Plan (markdown) -->
+                <div class="card summary-card featured-result">
+                    <div class="card-header">
+                        <h3>🎁 Your Travel Plan</h3>
+                        <button class="expand-btn" onclick="toggleCard(this)">−</button>
+                    </div>
+                    <div class="card-content expandable">
+                        <div id="summaryContent" class="markdown-body"></div>
+                    </div>
+                </div>
+
+                <!-- Hotel recommendations (parsed link cards) -->
+                <div class="card hotels-card">
+                    <div class="card-header">
+                        <h3>🏨 Hotel Picks</h3>
+                        <button class="expand-btn" onclick="toggleCard(this)">−</button>
+                    </div>
+                    <div class="card-content expandable">
+                        <div id="hotelsContent" class="content-loader"></div>
+                    </div>
+                </div>
+
+                <!-- Optional live flights (hidden until user clicks) -->
+                <div class="results-toolbar">
+                    <button id="toggleFlightsBtn" type="button" class="btn btn-secondary btn-flights-toggle" onclick="toggleLiveFlights()">
+                        ✈️ View Live Flights
+                    </button>
+                    <span id="flightsHint" class="flights-hint">Raw live flight status from AviationStack</span>
+                </div>
+
+                <div id="flightsPanel" class="card flights-card hidden">
+                    <div class="card-header">
+                        <h3>✈️ Live Flights</h3>
+                        <button class="expand-btn" onclick="toggleCard(this)">−</button>
+                    </div>
+                    <div class="card-content expandable">
+                        <div id="flightsContent" class="content-loader"></div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="resetForm()">New Search</button>
+                    <button class="btn btn-primary" onclick="downloadItinerary()">Download Itinerary</button>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="errorSection" class="error-section hidden">
+                <div class="error-container">
+                    <div class="error-icon">⚠️</div>
+                    <h3>Oops! Something went wrong</h3>
+                    <p id="errorMessage"></p>
+                    <button class="btn btn-primary" onclick="resetForm()">Try Again</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your travel needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-badge">Popular</div>
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="price-description">Perfect for occasional travelers</p>
+                    <ul class="price-features">
+                        <li>✓ 5 trip plans/month</li>
+                        <li>✓ Basic itineraries</li>
+                        <li>✓ Email support</li>
+                        <li>✗ Premium recommendations</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-block">Get Started Free</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge featured-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">19</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="price-description">For serious adventurers</p>
+                    <ul class="price-features">
+                        <li>✓ Unlimited trip plans</li>
+                        <li>✓ Advanced personalization</li>
+                        <li>✓ Priority AI agents</li>
+                        <li>✓ Premium recommendations</li>
+                        <li>✓ 24/7 phone support</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-badge">Enterprise</div>
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">Custom</span>
+                    </div>
+                    <p class="price-description">For travel companies & agencies</p>
+                    <ul class="price-features">
+                        <li>✓ White-label solution</li>
+                        <li>✓ API access</li>
+                        <li>✓ Bulk processing</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ Custom integrations</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-block">Contact Sales</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>Loved by Travelers</h2>
+                <p>See what our users are saying</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"GuzoAI saved me hours of planning! The itinerary was perfect and I discovered activities I would never have found on my own."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">JM</div>
+                        <div>
+                            <div class="author-name">Jessica Martinez</div>
+                            <div class="author-title">Travel Blogger</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The AI understood exactly what I wanted. All the flight options were competitively priced and the hotel recommendations matched my budget perfectly."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">RC</div>
+                        <div>
+                            <div class="author-name">Robert Chen</div>
+                            <div class="author-title">Corporate Traveler</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"As a travel agent, GuzoAI became my secret weapon. I can create beautiful itineraries for my clients in minutes. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">SK</div>
+                        <div>
+                            <div class="author-name">Sarah Khan</div>
+                            <div class="author-title">Travel Agent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How accurate are the flight prices?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI agents fetch real-time data from aviation databases, ensuring prices are accurate within minutes. We always recommend checking the final price on the booking site.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I customize the itinerary after it's generated?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! The itinerary is a starting point. You can modify activities, swap hotels, adjust dates, and make any changes you like. You can also re-run the planner with new preferences.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Does GuzoAI book my flights and hotels?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>GuzoAI creates the perfect itinerary for you, but you handle the bookings directly through the travel providers. This ensures you get the best rates and your own booking confirmation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is my travel data private and secure?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All your travel data is encrypted and stored securely. We follow industry-standard security practices and never share your information with third parties.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What makes GuzoAI different from other travel planners?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>GuzoAI uses multi-agent AI technology where different specialized agents work together - one finds flights, another handles hotels, another curates activities. This collaborative approach ensures better recommendations than traditional tools.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I get support if I need help?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Of course! We offer email support on all plans, and phone support for Professional and Enterprise plans. Our support team is available 24/7 to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Planning?</h2>
+                <p>Join thousands of travelers who have already discovered their perfect trips with GuzoAI.</p>
+                <a href="#planner" class="btn btn-primary btn-large">Plan Your Trip Now</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GuzoAI</h4>
+                    <p>AI-powered travel planning for everyone. Start your journey today.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GuzoAI. All rights reserved. Made with ❤️ by <strong>Mirt AI</strong></p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 Secure & Private</span>
+                    <span class="badge">🚀 Powered by Advanced AI</span>
+                    <span class="badge">✨ Enterprise Ready</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
