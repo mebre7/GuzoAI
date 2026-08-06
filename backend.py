@@ -87,7 +87,7 @@ def flight_agent(state: TravelState): # -> TravelState:
 #  Hotel agent
 # =============
 def hotel_agent(state: TravelState):
-    query = f"Best hotels for {state.get("user_query", "")}"
+    query = f"Best hotels for {state.get('user_query', '')}"
     hotel_data = duckduckgo_search(query)
 
     return {
