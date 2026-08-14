@@ -3,7 +3,7 @@
 A multi-agent AI travel planner that takes natural language input and generates personalized travel itineraries — including flights, hotels, activities, and local attractions.
 
 Built with **LangGraph**, **LangChain**, **Groq**, and **FastAPI**.
-
+![Diagram](media/without_MCP.jpeg)
 ## Agents
 
 | Agent | Role |
