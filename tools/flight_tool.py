@@ -168,7 +168,7 @@ def country_name_to_code(text: str) -> str:
     
     # Substring search in custom aliases (alias in text)
     for alias, code in COUNTRY_ALIASES.items():
-        for alias in text:
+        if re.search(rf"\b{re.escape(alias)}\b", text):
             return code
     return None
 
@@ -216,11 +216,12 @@ def get_best_airport_for_country(country_code: str) -> str:
                 score += 5
             
             candidates.append((score, iata))
-        if not candidates:
-            return None
-        
-        candidates.sort(reverse=True)
-        return candidates[0][1] # Return 
+
+    if not candidates:
+        return None
+
+    candidates.sort(reverse=True)
+    return candidates[0][1]
 
 
 def resolve_location_to_iata(location: str):
@@ -405,7 +406,7 @@ def parse_route(query: str):
     if match:
         dest_text = match.group(1)
         arr_iata = resolve_location_to_iata(dest_text)
-        return None, arr_iata
+        return DEFAULT_ORIGIN_IATA, arr_iata
 
     # Fallback: find country/city mentions
     mentions = find_location_mentions(q)
@@ -490,6 +491,7 @@ def search_flights(query: str, limit: int = 10):
 
     try:
         response = requests.get(BASE_URL, params=params, timeout=30)
+        response.raise_for_status()
         data = response.json()
     except requests.exceptions.RequestException as e:
         return f"Flight API request failed: {e}"

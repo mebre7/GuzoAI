@@ -1,8 +1,11 @@
 from ddgs import DDGS
 
 def duckduckgo_search(query: str):
-    with DDGS() as ddgs:
-        response = list(ddgs.text(query, max_results=5))
+    try:
+        with DDGS() as ddgs:
+            response = list(ddgs.text(query, max_results=5))
+    except Exception as exc:
+        return [f"Hotel search unavailable: {type(exc).__name__}"]
     results = []
 
     for i, r in enumerate(response, 1):
